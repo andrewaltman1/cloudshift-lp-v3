@@ -1,6 +1,3 @@
-"use client";
-import Image from 'next/image'
-// import styles from './page.module.css'
 import { Paper } from "@mui/material";
 import ResponsiveAppBar from "./ResponsiveAppBar";
 import Articles from "./Articles";
@@ -18,7 +15,8 @@ const theme = createTheme({
   },
 });
 
-export default function Home() {
+
+function App() {
   return (
     <>
       <ThemeProvider theme={theme} >
@@ -33,3 +31,5 @@ export default function Home() {
 
   );
 }
+
+export default App
